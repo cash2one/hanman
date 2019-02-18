@@ -52,7 +52,7 @@ class BookService extends Base
     }
 
     public function getBooksById($ids){
-        $exp = new \think\Db\Expression('field(id,'.$ids.')');
+        $exp = new \think\db\Expression('field(id,'.$ids.')');
         $books = Book::where('id','in',$ids)->with('author,chapters')->order($exp)->select();
         foreach ($books as &$book){
             $book['chapter_count'] = count($book->chapters);
