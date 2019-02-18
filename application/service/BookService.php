@@ -51,6 +51,15 @@ class BookService extends Base
         return $books;
     }
 
+    public function getBooksById($ids){
+        $exp = new \think\Db\Expression('field(id,'.$ids.')');
+        $books = Book::where('id','in',$ids)->with('author,chapters')->order($exp)->select();
+        foreach ($books as &$book){
+            $book['chapter_count'] = count($book->chapters);
+        }
+        return $books;
+    }
+
     public function getRandBooks(){
         $books = Db::query('SELECT ad1.id,book_name,summary,cover_url FROM '.$this->prefix.'book AS ad1 JOIN 
 (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM '.$this->prefix.'book)-(SELECT MIN(id) FROM '.$this->prefix.'book))+(SELECT MIN(id) FROM '.$this->prefix.'book)) AS id)

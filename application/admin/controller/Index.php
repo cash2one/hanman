@@ -19,13 +19,19 @@ class Index extends BaseAdmin
         $salt = config('site.salt');
         $xzh = config('site.xzh');
         $api_key = config('site.api_key');
+        $redis_host = config('redis_host');
+        $redis_port = config('redis_port');
+        $redis_auth = config('redis_auth');
         $this->assign([
             'site_name' => $site_name,
             'url' => $url,
             'img_site' => $img_site,
             'salt' => $salt,
             'xzh' => $xzh,
-            'api_key' => $api_key
+            'api_key' => $api_key,
+            'redis_host' => $redis_host,
+            'redis_port' => $redis_port,
+            'redis_auth' => $redis_auth
         ]);
         return view();
     }
@@ -38,6 +44,9 @@ class Index extends BaseAdmin
         $salt = input('salt');
         $xzh = input('xzh');
         $api_key = input('api_key');
+        $redis_host = input('redis_host');
+        $redis_port = input('redis_port');
+        $redis_auth = input('redis_auth');
         $code = <<<INFO
         <?php
         return [
@@ -46,7 +55,10 @@ class Index extends BaseAdmin
             'site_name' => '{$site_name}',
             'xiongzhang' => '{$xzh}',
             'salt' => '{$salt}',
-            'api_key' => '{$api_key}'
+            'api_key' => '{$api_key}',
+            'redis_host' => '{$redis_host}',
+            'redis_port' => '{$redis_port}',
+            'redis_auth' => '{$redis_auth}'
         ];
 INFO;
         file_put_contents(App::getRootPath() . 'config/site.php', $code);

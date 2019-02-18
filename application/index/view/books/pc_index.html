@@ -107,7 +107,7 @@
                 <ul class="m_ph_ul" style="display:block">
                     {volist name="updates" id="vo"}
                     <li>
-                        <a href=/book/{$vo.id}">
+                        <a href="/book/{$vo.id}">
                             {if empty($vo.cover_url)}
                             <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" class="fl">
                             {else /}

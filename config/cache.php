@@ -15,7 +15,10 @@
 
 return [
     // 驱动方式
-    'type'   => 'File',
+    'type'   => 'redis',
+    'host' => '127.0.0.1',
+    'port' => 6379,
+    'password'   => '',
     // 缓存保存目录
     'path'   => '',
     // 缓存前缀

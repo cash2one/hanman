@@ -135,7 +135,6 @@
         },
         invoke : function(){
             //this.disabFn();
-            this.loadFn();
             this.m_nav();
             this.m_recently();
             this.m_whole();

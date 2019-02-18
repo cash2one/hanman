@@ -37,7 +37,7 @@
                 <div class="row clearfix">
                     <label class="form-label col-xs-4 col-sm-3">密码盐：</label>
                     <div class="formControls col-xs-8 col-sm-9">
-                        <input type="text" class="input-text" value="{$salt}" name="salt">
+                        <input type="text" class="input-text" value="{$salt}" name="salt" readonly="readonly">
                     </div>
                 </div>
 
@@ -45,6 +45,27 @@
                     <label class="form-label col-xs-4 col-sm-3">api密钥：</label>
                     <div class="formControls col-xs-8 col-sm-9">
                         <input type="text" class="input-text" value="{$api_key}" name="api_key">
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <label class="form-label col-xs-4 col-sm-3">redis地址：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input type="text" class="input-text" value="{$redis_host}" name="redis_host">
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <label class="form-label col-xs-4 col-sm-3">redis端口：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input type="text" class="input-text" value="{$redis_port}" name="redis_port">
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <label class="form-label col-xs-4 col-sm-3">redis密码：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        <input type="text" class="input-text" value="{$redis_auth}" name="redis_auth" placeholder="不设置密码请留空">
                     </div>
                 </div>
 
