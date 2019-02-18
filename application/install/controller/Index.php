@@ -237,7 +237,9 @@ class Index extends Controller
             'salt' => '{$salt}',
             'api_key' => '{$api_key}',
              'redis_host' => '{$redis_host}',
-            'redis_port' => '{$redis_port}'        ];
+            'redis_port' => '{$redis_port}',
+            'redis_auth' => ''        
+            ];
 INFO;
         file_put_contents(App::getRootPath() . 'config/site.php', $code);
     }

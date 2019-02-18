@@ -19,9 +19,9 @@ class Index extends BaseAdmin
         $salt = config('site.salt');
         $xzh = config('site.xzh');
         $api_key = config('site.api_key');
-        $redis_host = config('redis_host');
-        $redis_port = config('redis_port');
-        $redis_auth = config('redis_auth');
+        $redis_host = config('site.redis_host');
+        $redis_port = config('site.redis_port');
+        $redis_auth = config('site.redis_auth');
         $this->assign([
             'site_name' => $site_name,
             'url' => $url,
