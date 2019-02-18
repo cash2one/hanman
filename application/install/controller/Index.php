@@ -225,6 +225,8 @@ class Index extends Controller
         $img_site = config('site.img_site');
         $xzh = config('site.xzh');
         $api_key = config('site.api_key');
+        $redis_host = '127.0.0.1';
+        $redis_port = '6379';
         $code = <<<INFO
         <?php
         return [
@@ -233,8 +235,9 @@ class Index extends Controller
             'site_name' => '{$site_name}',
             'xiongzhang' => '{$xzh}',
             'salt' => '{$salt}',
-            'api_key' => '{$api_key}'
-        ];
+            'api_key' => '{$api_key}',
+             'redis_host' => '{$redis_host}',
+            'redis_port' => '{$redis_port}'        ];
 INFO;
         file_put_contents(App::getRootPath() . 'config/site.php', $code);
     }
