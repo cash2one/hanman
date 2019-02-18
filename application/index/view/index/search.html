@@ -33,10 +33,11 @@
     <li>
         <a href="/book/{$vo.id}">
             {if empty($vo.cover_url)}
-            <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" class="fl">
-            {else /}
-            <img src="{$vo.cover_url}" class="fl">
-            {/if}
+                    <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" 
+                    src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy fl">
+                    {else /}
+                    <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy fl">
+                    {/if}
             <div class="sr_tit">
                 <h2>{$vo.book_name}</h2>
                 <h3>作者：{$vo.author.author_name}</h3>
@@ -58,6 +59,6 @@
     }
 </script>
 {include file="pub/others" /}
-
+{include file="pub/foot" /}
 </body>
 </html>

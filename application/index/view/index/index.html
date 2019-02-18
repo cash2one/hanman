@@ -37,9 +37,9 @@
             <div class="swiper-slide" style="width: 87.3684px; margin-right: 10px;">
                 <a href="/book/{$vo.id}" class="m_recently_a">
                     {if empty($vo.cover_url)}
-                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
+                    <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {else /}
-                    <img src="{$vo.cover_url}">
+                    <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {/if}
                     <h3>{$vo.book_name}</h3>
                     <p>更新至第{$vo.chapter_count}话</p>
@@ -61,9 +61,9 @@
             <div class="swiper-slide" style="width: 87.3684px; margin-right: 10px;">
                 <a href="/book/{$vo.id}" class="m_recently_a">
                     {if empty($vo.cover_url)}
-                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
+                    <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {else /}
-                    <img src="{$vo.cover_url}">
+                    <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {/if}
                     <h3>{$vo.book_name}</h3>
                     <p>更新至第{$vo.chapter_count}话</p>
@@ -85,9 +85,9 @@
             <div class="swiper-slide" style="width: 87.3684px; margin-right: 10px;">
                 <a href="/book/{$vo.id}" class="m_recently_a">
                     {if empty($vo.cover_url)}
-                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
+                    <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {else /}
-                    <img src="{$vo.cover_url}">
+                    <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {/if}
                     <h3>{$vo.book_name}</h3>
                     <p>更新至第{$vo.chapter_count}话</p>
@@ -115,9 +115,9 @@
             <li>
                 <a href="/book/{$vo.id}">
                     {if empty($vo.cover_url)}
-                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" class="fl">
+                    <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {else /}
-                    <img src="{$vo.cover_url}" class="fl">
+                    <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {/if}
                     <div class="m_ph_d">
                         <h2 class="m_ph_h2">{$vo.book_name}</h2>
@@ -133,9 +133,9 @@
             <li>
                 <a href="/book/{$vo.id}">
                     {if empty($vo.cover_url)}
-                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" class="fl">
+                    <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {else /}
-                    <img src="{$vo.cover_url}" class="fl">
+                    <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                     {/if}
                     <div class="m_ph_d">
                         <h2 class="m_ph_h2">{$vo.book_name}</h2>
@@ -151,9 +151,9 @@
             <li>
                 <a href="/book/{$vo.id}">
                     {if empty($vo.cover_url)}
-                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" class="fl">
+                    <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy fl">
                     {else /}
-                    <img src="{$vo.cover_url}" class="fl">
+                    <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy fl">
                     {/if}
                     <div class="m_ph_d">
                         <h2 class="m_ph_h2">{$vo.book_name}</h2>
@@ -166,5 +166,4 @@
         </ul>
     </div>
 </div>
-{include file="pub/foot" /}
 {/block}

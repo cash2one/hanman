@@ -8,9 +8,9 @@
     <div class="m1100 d_bgi">
         <a class="fl d_bgi_href" href="javascript:;">
             {if empty($book.cover_url)}
-            <img src="{$img_site}/static/upload/book/{$book.id}/cover.jpg" class="fl">
+            <img data-original="{$img_site}/static/upload/book/{$book.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="fl lazy">
             {else /}
-            <img src="{$book.cover_url}" class="fl">           
+            <img data-original="{$book.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="fl lazy">           
             {/if}
         <div class="d_bg">
             <div class="d_bg_t">
@@ -109,9 +109,9 @@
                     <li>
                         <a href="/book/{$vo.id}">
                             {if empty($vo.cover_url)}
-                            <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" class="fl">
+                            <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="fl lazy">
                             {else /}
-                            <img src="{$vo.cover_url}" class="fl">
+                            <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="fl lazy">
                             {/if}
                             <div class="m_ph_d">
                                 <h2 class="m_ph_h2">{$vo.book_name}</h2>

@@ -19,7 +19,7 @@ CREATE TABLE `xwx_admin` (
 DROP TABLE IF EXISTS `xwx_author`;
 CREATE TABLE `xwx_author` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `author_name` varchar(50) NOT NULL,
+  `author_name` varchar(100) NOT NULL,
    `create_time` int(11) DEFAULT '0',
   `update_time` int(11) DEFAULT '0',
   PRIMARY KEY (`id`) USING BTREE,
