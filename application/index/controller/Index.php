@@ -53,11 +53,6 @@ class Index extends Base
                 $newest = $this->bookService->getBooks('create_time','1=1',10);
                 cache('newest_homepage_pc',$newest);
             }
-//            $hot = cache('hot_homepage_pc');
-//            if (!$hot){
-//                $hot = $this->bookService->getBooks('click','1=1',10);
-//                cache('hot_homepage_pc',$hot);
-//            }
 
             $order = $redis->zRevRange('book_clicks',0,9,true);
             foreach ($order as $key => $value){

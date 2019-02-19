@@ -52,7 +52,7 @@ class BookService extends Base
     }
 
     public function getBooksById($ids){
-        if (empty($ids) || count($ids)<=0){
+        if (empty($ids) || strlen($ids)<=0){
             $ids = 1;
         }
         $exp = new \think\db\Expression('field(id,'.$ids.')');
