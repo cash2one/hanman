@@ -4,7 +4,7 @@
 DROP TABLE IF EXISTS `xwx_admin`;
 CREATE TABLE `xwx_admin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(12) NOT NULL,
+  `username` varchar(20) NOT NULL,
   `password` varchar(100) NOT NULL,
   `create_time` int(11) DEFAULT '0',
   `update_time` int(11) DEFAULT '0',
