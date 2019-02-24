@@ -12,6 +12,7 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Request;
 use app\model\Admin;
+use think\captcha\Captcha;
 
 class Login extends Controller
 {
@@ -21,11 +22,11 @@ class Login extends Controller
 
     public function login(Request $request){
         if ($request->isPost()){
-//            $verify_code = $request->param('verify_code');
-//            if( !captcha_check($verify_code ))
-//            {
-//                $this->error('验证码错误','/admin/login/index','',1);
-//            }
+            $captcha = $request->param('captcha');
+            if( !captcha_check($captcha ))
+            {
+                $this->error('验证码错误','/admin/login/index','',1);
+            }
             $username = $request->param('admin');
             $password = md5($request->param('password').config('site.salt'));
             $map = array();

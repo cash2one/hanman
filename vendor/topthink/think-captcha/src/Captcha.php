@@ -18,7 +18,7 @@ class Captcha
     protected $config = [
         'seKey'    => 'ThinkPHP.CN',
         // 验证码加密密钥
-        'codeSet'  => '2345678abcdefhijkmnpqrstuvwxyzABCDEFGHJKLMNPQRTUVWXY',
+        'codeSet'  => '0123456789',
         // 验证码字符集合
         'expire'   => 1800,
         // 验证码过期时间（s）
@@ -28,7 +28,7 @@ class Captcha
         // 中文验证码字符串
         'useImgBg' => false,
         // 使用背景图片
-        'fontSize' => 25,
+        'fontSize' => 18,
         // 验证码字体大小(px)
         'useCurve' => true,
         // 是否画混淆曲线
@@ -38,7 +38,7 @@ class Captcha
         // 验证码图片高度
         'imageW'   => 0,
         // 验证码图片宽度
-        'length'   => 5,
+        'length'   => 4,
         // 验证码位数
         'fontttf'  => '',
         // 验证码字体，不设置随机获取
