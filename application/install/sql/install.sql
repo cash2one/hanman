@@ -45,7 +45,7 @@ CREATE TABLE `xwx_banner` (
 -- ----------------------------
 DROP TABLE IF EXISTS `xwx_book`;
 CREATE TABLE `xwx_book` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `book_name` varchar(50) NOT NULL,
   `nick_name` varchar(100),
   `create_time` int(11) DEFAULT '0',
@@ -69,7 +69,7 @@ CREATE TABLE `xwx_book` (
 -- ----------------------------
 DROP TABLE IF EXISTS `xwx_chapter`;
 CREATE TABLE `xwx_chapter` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `chapter_name` varchar(255) NOT NULL,
   `create_time` int(11) DEFAULT '0',
   `update_time` int(11) DEFAULT '0',
@@ -87,7 +87,7 @@ CREATE TABLE `xwx_chapter` (
 -- ----------------------------
 DROP TABLE IF EXISTS `xwx_photo`;
 CREATE TABLE `xwx_photo` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `chapter_id` int(11) NOT NULL,
   `create_time` int(11) DEFAULT '0',
   `update_time` int(11) DEFAULT '0',
@@ -103,7 +103,7 @@ CREATE TABLE `xwx_photo` (
 -- ----------------------------
 DROP TABLE IF EXISTS `xwx_tags`;
 CREATE TABLE `xwx_tags` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `tag_name` varchar(20) NOT NULL,
   `create_time` int(11) DEFAULT '0',
   `update_time` int(11) DEFAULT '0',

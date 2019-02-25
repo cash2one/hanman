@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c5f9d75-19ef-4c9b-ae59-bb3279b1839b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/login/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-captcha/src/Captcha.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-captcha/src/Captcha.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/topthink/think-captcha/src/CaptchaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/topthink/think-captcha/src/CaptchaController.php" afterDir="false" />
-    </list>
+    <list default="true" id="6c5f9d75-19ef-4c9b-ae59-bb3279b1839b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +114,7 @@
       <find>newest</find>
       <find>updates</find>
       <find>global_search</find>
-      <find />
+      <find>img src=</find>
       <find>src=</find>
       <find>hot</find>
       <find>最多点击</find>
