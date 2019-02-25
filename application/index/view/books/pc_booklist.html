@@ -26,9 +26,9 @@
         <li>
             <a href="/book/{$vo.id}">
                 {if empty($vo.cover_url)}
-                <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="fl lazy">
+                <img data-original="{$img_site}/static/upload/book/{$vo.id}/cover.jpg" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                 {else /}
-                <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="fl lazy">              
+                <img data-original="{$vo.cover_url}" src="https://s2.ax1x.com/2019/02/18/kcCew6.jpg" class="lazy">
                 {/if}
                 <h3>{$vo.book_name}</h3>
                 <p>更新于：<span>{$vo.update_time|date='Y-m-d H:i'}</span></p>

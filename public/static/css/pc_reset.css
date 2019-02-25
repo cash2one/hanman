@@ -117,10 +117,6 @@ a {
 .m_register ul>li>i{display:inline-block;width:20px;height:20px;vertical-align: middle;}
 .m_register ul>li>span{display:inline-block;vertical-align: middle;margin-left:10px;}
 .reg_share{margin-right:25px;position:relative;padding-bottom: 25px;}
-.reg_share i{background:url(../images/share1.png) no-repeat;}
-.reg_collect i{background:url(../images/read1.png) no-repeat;}
-.reg_share .i_img1{background:url(../images/share2.png) no-repeat;}
-.reg_collect .i_img2{background:url(../images/read2.png) no-repeat;}
 .reg_totalS{width:118px;height:140px;position:absolute;top:46px;left:-34px;border:1px solid #e4e4e4;z-index:9;border-radius:4px;display:none;}
 .reg_total{position:relative;background:#fff;height:100%;padding:15px 13px;box-sizing:border-box;}
 .reg_total:before{content:'';display:block;width:0;height:0;border-width:0 10px 10px;border-style:solid;border-color:transparent transparent #e4e4e4;position:absolute;top:-10px;left:50%;margin-left:-10px;}

@@ -203,44 +203,6 @@ $(".red_total_a3 span").after("<div class='Ashar_box'><div class='bdsharebuttonb
             }
 
             $(".fi_classify_ul").css("height",$(window).height()/1.2);
-
-            //弹窗
-            $(".fi_dialog_r span").click(function(){
-                $(".fi_mask,.fi_dialog").hide();
-                $(".r_body").removeClass("r_body_hidden");
-            })
-        },
-        //分享
-        reg_share:function(){
-            $(".reg_share").hover(function(){
-                $(".reg_totalS").fadeIn();
-            },function(){
-                $(".reg_totalS").fadeOut();
-            });
-            // $(".reg_share").click(function(){
-            //     $(".reg_totalS").toggle();
-            // })
-        //收藏
-            $(".reg_collect,.d_bg_collect").click(function(){
-                $(".fi_mask,.reg_mask").show();
-            })
-            $(".reg_mask_button,.fi_mask").click(function(){
-                $(".fi_mask,.reg_mask").hide();
-            })
-        //复制链接 
-            $(".red_total_a1").click(function(){
-                //复制内容到剪切板
-                var Url2=document.getElementById("biao1");
-                var Url = window.location.href;
-                Url2.innerHTML = Url;
-                Url2.select(); // 选择对象
-                document.execCommand("Copy"); // 执行浏览器复制命令
-                $(".reg_lianjie h3").text(Url);
-                $(".fi_mask,.reg_lianjie").show();
-            })
-            $(".fi_mask,.reg_lianjie a").click(function(){
-                $(".fi_mask,.reg_lianjie").hide();
-            })
         },
         invoke : function(){
             this.m_nav();
@@ -257,7 +219,6 @@ $(".red_total_a3 span").after("<div class='Ashar_box'><div class='bdsharebuttonb
             this.red_none();
             this.List_kong();
             this.details_bg();
-            this.reg_share();
         }
     }
     soft.invoke();

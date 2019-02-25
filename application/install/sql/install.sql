@@ -14,6 +14,19 @@ CREATE TABLE `xwx_admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
+-- Table structure for xwx_user
+-- ----------------------------
+DROP TABLE IF EXISTS `xwx_user`;
+CREATE TABLE `xwx_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mobile` char(11) DEFAULT NULL,
+  `password` char(32) DEFAULT NULL,
+  `create_time` int(11) DEFAULT NULL,
+  `update_time` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
 -- Table structure for author
 -- ----------------------------
 DROP TABLE IF EXISTS `xwx_author`;
@@ -57,6 +70,8 @@ CREATE TABLE `xwx_book` (
   `click` bigint(20) DEFAULT '0',
   `src` varchar(50) DEFAULT '',
   `cover_url` varchar(255) DEFAULT '',
+  `start_pay` int(10) NOT NULL DEFAULT '99999' COMMENT '第m话开始需要付费',
+  `money` decimal(10,2) DEFAULT '0',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `tags` (`tags`) USING BTREE,
   KEY `end` (`end`) USING HASH,
@@ -74,7 +89,6 @@ CREATE TABLE `xwx_chapter` (
   `create_time` int(11) DEFAULT '0',
   `update_time` int(11) DEFAULT '0',
   `book_id` bigint(20) NOT NULL,
-  `isvip` tinyint(4) DEFAULT '0',
   `order` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   KEY `chapter_name` (`chapter_name`(250)) USING BTREE,
