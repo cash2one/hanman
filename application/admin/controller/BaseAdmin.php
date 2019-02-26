@@ -33,7 +33,7 @@ class BaseAdmin extends Controller
     }
 
     protected function checkAuth(){
-        if (!Session::has('admin')) {
+        if (!Session::has('xwx_admin')) {
             $this->redirect('admin/login/index');
         }
     }

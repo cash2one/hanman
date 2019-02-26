@@ -19,10 +19,11 @@ CREATE TABLE `xwx_admin` (
 DROP TABLE IF EXISTS `xwx_user`;
 CREATE TABLE `xwx_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `mobile` char(11) DEFAULT NULL,
-  `password` char(32) DEFAULT NULL,
-  `create_time` int(11) DEFAULT NULL,
-  `update_time` int(11) DEFAULT NULL,
+  `username` char(32) NOT NULL,
+  `mobile` char(11) DEFAULT '',
+  `password` char(32) NOT NULL,
+  `create_time` int(11) DEFAULT '0',
+  `update_time` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

@@ -21,6 +21,6 @@ class Admin extends Model
     }
 
     public function setPasswordAttr($value){
-        return md5(strtolower(trim($value)));
+        return md5(strtolower(trim($value)).config('site.salt'));
     }
 }

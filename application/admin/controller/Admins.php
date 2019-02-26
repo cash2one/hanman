@@ -42,7 +42,7 @@ class Admins extends BaseAdmin
         }else{
             $admin = new Admin();
             $admin->username = $data['username'];
-            $admin->password = $data['password'].config('site.salt');
+            $admin->password = $data['password'];
             $admin->save();
             $this->success('新增管理员成功','index','',1);
         }
@@ -64,7 +64,7 @@ class Admins extends BaseAdmin
         $admin->id = $data['id'];
         $admin->username = $data['username'];
         if (!empty($data['password'])){
-            $admin->password = $data['password'].config('site.salt');
+            $admin->password = $data['password'];
         }
         $admin->isUpdate(true)->save();
         $this->success('编辑成功',$data['returnUrl'],'',1);

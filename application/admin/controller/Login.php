@@ -36,7 +36,7 @@ class Login extends Controller
             if (!$admin){
                 $this->error('用户名或密码错误','/admin/login/index','',1);
             }
-            session('admin',$admin->username);
+            session('xwx_admin',$admin->username);
             $this->success('登录成功','admin/index/index','',1);
         }else{
             return view('index');
