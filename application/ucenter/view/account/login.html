@@ -26,7 +26,7 @@
                 <input type="password" class="input-text radius size-L" name="password" id="password" value="" placeholder="密码">
             </div>
             <div class="row clearfix">
-                <button class="btn btn-primary btn-block radius size-L" onclick="login()">登 录</button>
+                <button class="btn btn-primary btn-block radius size-L">登 录</button>
             </div>
             <div class="row clearfix f-12">
                 <a href="/password/reset/">忘记密码?</a>
@@ -49,28 +49,24 @@
             rules: {
                 username: {
                     required: true,
-                    rangelength: [6, 20]
                 },
                 password: {
                     required: true,
-                    rangelength: [6, 16]
                 }
             },
             messages: {
                 username: {
                     required: "用户名不能为空",
-                    rangelength: "用户名长度6-20个字符"
                 },
                 password: {
                     required: "密码不能为空",
-                    rangelength: "密码长度6-16个字符"
                 }
             },
             onkeyup: false,
             focusCleanup: false,
             submitHandler: function(form) {
                 $(".label.error").hide();
-                //在这里执行表单提交
+                login();
             }
         });
     });

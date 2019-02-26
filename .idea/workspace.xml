@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5f9d75-19ef-4c9b-ae59-bb3279b1839b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ucenter/controller/Base.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ucenter/controller/Users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ucenter/view/account/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Admins.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Admins.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/BaseAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/BaseAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/pub/pc_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/pub/pc_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/install/sql/install.sql" beforeDir="false" afterPath="$PROJECT_DIR$/application/install/sql/install.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/model/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/model/Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/ucenter/controller/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/ucenter/controller/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/ucenter/view/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/ucenter/view/account/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/ucenter/view/account/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/ucenter/view/account/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/admin/css/H-ui.ucenter.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/admin/css/H-ui.ucenter.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,83 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Account.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/ucenter/controller/Account.php">
+      <file leaf-file-name="Tags.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/model/Tags.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
-              <folding>
-                <element signature="e#124#143#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/model/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#111#127#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/ucenter/controller/Users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/ucenter/controller/Base.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/BaseAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-              <folding>
-                <element signature="e#2291#3126#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="85" />
+            <state relative-caret-position="234">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -197,6 +117,7 @@
       <find>Config</find>
       <find>弹窗</find>
       <find>layer</find>
+      <find>deny_module_list</find>
     </findStrings>
     <replaceStrings>
       <replace>小涴熊CMS</replace>
@@ -214,9 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/admin/controller/Authors.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Photos.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/Photos.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Books.php" />
         <option value="$PROJECT_DIR$/application/index/view/books/index.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/bookshelf.html" />
@@ -255,16 +173,19 @@
         <option value="$PROJECT_DIR$/application/index/view/pub/pc_base.html" />
         <option value="$PROJECT_DIR$/application/install/sql/install.sql" />
         <option value="$PROJECT_DIR$/application/ucenter/validate/Account.php" />
-        <option value="$PROJECT_DIR$/application/ucenter/view/account/register.html" />
         <option value="$PROJECT_DIR$/application/model/Admin.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Admins.php" />
-        <option value="$PROJECT_DIR$/application/ucenter/view/account/login.html" />
         <option value="$PROJECT_DIR$/application/ucenter/controller/Users.php" />
         <option value="$PROJECT_DIR$/application/ucenter/controller/Base.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/BaseAdmin.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
-        <option value="$PROJECT_DIR$/application/ucenter/controller/Account.php" />
         <option value="$PROJECT_DIR$/application/model/User.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Users.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/application/ucenter/view/account/register.html" />
+        <option value="$PROJECT_DIR$/application/ucenter/view/account/login.html" />
+        <option value="$PROJECT_DIR$/application/ucenter/controller/Account.php" />
+        <option value="$PROJECT_DIR$/application/model/Tags.php" />
       </list>
     </option>
   </component>
@@ -300,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,41 +237,36 @@
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiaoshuo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wwwroot\hanman\public\static\admin\css" />
+      <recent name="D:\wwwroot\hanman\public\static\admin\images" />
+      <recent name="D:\wwwroot\hanman\public\static\user" />
+      <recent name="D:\wwwroot\hanman\public\static\upload" />
+      <recent name="D:\wwwroot\hanman\application\admin\view" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wwwroot\hanman\application" />
       <recent name="D:\wwwroot\hanman\public\static\admin\js" />
       <recent name="D:\wwwroot\hanman\public\static\admin\css" />
       <recent name="D:\wwwroot\hanman\public\static\admin_js" />
       <recent name="D:\wwwroot\hanman\public\static\admin_css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wwwroot\hanman\public\static\admin\images" />
-      <recent name="D:\wwwroot\hanman\public\static\admin\css" />
-      <recent name="D:\wwwroot\hanman\public\static\user" />
-      <recent name="D:\wwwroot\hanman\public\static\upload" />
-      <recent name="D:\wwwroot\hanman\application\admin\view" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -486,18 +401,19 @@
       <workItem from="1550979361735" duration="1728000" />
       <workItem from="1550981306894" duration="4828000" />
       <workItem from="1551077971384" duration="6690000" />
-      <workItem from="1551155432468" duration="4550000" />
+      <workItem from="1551155432468" duration="7080000" />
+      <workItem from="1551169586732" duration="148000" />
+      <workItem from="1551172244049" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181271000" />
+    <option name="totallyTimeSpent" value="183960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20174263" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20710456" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -554,39 +470,31 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/index/view/chapters/pc_index.html">
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/bookshelf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_search.html">
+    <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <caret line="22" column="96" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="96" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/search.html">
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Admins.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="1062">
+          <caret line="66" column="48" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/Index.php" />
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Books.php">
+    <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+        <state relative-caret-position="1440">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -786,13 +694,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/ucenter/validate/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/ucenter/validate/Account.php" />
     <entry file="file://$PROJECT_DIR$/application/admin/validate/Book.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -814,16 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/admins/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Admins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="66" column="48" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/model/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -835,23 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="31" selection-start-line="31" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-          <folding>
-            <element signature="e#2291#3126#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -883,23 +758,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/ucenter/controller/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
-          <folding>
-            <element signature="e#124#143#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#111#127#0#PHP" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Admins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="66" column="48" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="96" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/ucenter/controller/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/model/Tags.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
         </state>
       </provider>
     </entry>

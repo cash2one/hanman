@@ -40,8 +40,8 @@ class Account extends Controller
     public function login(Request $request){
         if ($request->isPost()){
             $map = array();
-            $map['username'] = trim($request->param('username'));
-            $map['password'] = md5(strtolower(trim($request->param('password'))).config('site.salt'));
+            $map[] = ['username','=',trim($request->param('username'))];
+            $map[] = ['password','=',md5(strtolower(trim($request->param('password'))).config('site.salt'))];
             $user = User::where($map)->find();
             if (is_null($user)){
                 return ['err' => 1, 'msg' => '用户名或密码错误'];
