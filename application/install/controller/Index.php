@@ -196,11 +196,11 @@ class Index extends Controller
                 }
             }
         }
-        $this->setSalt($param['salt']); //先写入密码盐，再创建管理员账号
+        $this->setSalt(trim($param['salt'])); 
         // 注册管理员账号
         $data = [
             'username' => $param['username'],
-            'password' => $param['password'],
+            'password' => md5(strtolower(trim($param['password'])).trim($param['salt'])) ,
             'last_login_time' => time(),
             'last_login_ip' => $this->request->ip(),
         ];
