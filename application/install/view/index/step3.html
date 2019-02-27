@@ -76,7 +76,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">管理员密码</label>
             <div class="layui-input-inline w200">
-                <input type="password" class="layui-input" name="password">
+                <input type="text" class="layui-input" name="password">
             </div>
             <div class="layui-form-mid layui-word-aux">保证密码最少6位</div>
         </div>
@@ -86,6 +86,13 @@
                 <input type="text" class="layui-input" name="salt">
             </div>
             <div class="layui-form-mid layui-word-aux">随便输入几个字符</div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">redis缓存前缀</label>
+            <div class="layui-input-inline w200">
+                <input type="text" class="layui-input" name="redis_prefix">
+            </div>
+            <div class="layui-form-mid layui-word-aux">区分一台机器上多个网站的缓存</div>
         </div>
         <div class="step-btns">
             <a href="?step=2" class="layui-btn layui-btn-primary layui-btn-big fl">返回上一步</a>

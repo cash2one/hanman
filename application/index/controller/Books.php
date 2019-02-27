@@ -28,14 +28,20 @@ class Books extends Base
             cache('book' . $id, $book);
             cache('book' . $id . 'tags', $tags);
         }
-//        $book->click = $book->click + 1;
-//        $book->isUpdate(true)->save();
+
         $redis = new \Redis();
         $redis->connect(config('site.redis_host'), config('site.redis_port'));
         if (!empty(config('site.redis_auth'))){
             $redis->auth(config('site.redis_auth'));
         }
-        $redis->zIncrBy('book_clicks',1,$id);
+        $redis->zIncrBy('hot_books',1,json_encode([
+            'id' => $book->id,
+            'book_name' => $book->book_name,
+            'cover_url' => $book->cover_url,
+            'update_time' => $book->update_time,
+            'chapter_count' => count($book->chapters),
+            'summary' => $book->summary
+        ]));
         $recommand = $this->bookService->getRandBooks();
         $start = cache('book_start' . $id);
         if ($start == false) {

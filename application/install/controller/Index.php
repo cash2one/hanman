@@ -196,7 +196,8 @@ class Index extends Controller
                 }
             }
         }
-        $this->setSalt(trim($param['salt'])); 
+        $this->setSiteConfig(trim($param['salt']),trim($param['redis_prefix'])); //写入网站配置文件
+        $this->setCacheConfig(trim($param['redis_prefix'])); //写入cache配置文件
         // 注册管理员账号
         $data = [
             'username' => $param['username'],
@@ -219,7 +220,7 @@ class Index extends Controller
         $this->success('系统安装成功,欢迎您使用小涴熊CMS建站.');
     }
 
-    private function setSalt($salt){
+    private function setSiteConfig($salt,$redis_prefix){
         $site_name = config('site.site_name');
         $url = config('site.url');
         $img_site = config('site.img_site');
@@ -238,10 +239,30 @@ class Index extends Controller
             'api_key' => '{$api_key}',
              'redis_host' => '{$redis_host}',
             'redis_port' => '{$redis_port}',
+            'redis_prefix' => '{$redis_prefix}'
             'redis_auth' => ''        
             ];
 INFO;
         file_put_contents(App::getRootPath() . 'config/site.php', $code);
+    }
+
+    private function setCacheConfig($redis_prefix){
+        $code = <<<INFO
+        return [
+            // 驱动方式
+            'type'   => 'redis',
+            'host' => '127.0.0.1',
+            'port' => 6379,
+            'password'   => '',
+            // 缓存保存目录
+            'path'   => '../runtime/cache/',
+            // 缓存前缀
+            'prefix' => '{$redis_prefix}',
+            // 缓存有效期 0表示永久缓存
+            'expire' => 600,
+        ];
+INFO;
+        file_put_contents(App::getRootPath() . 'config/cache.php', $code);
     }
     /**
      * 环境检测

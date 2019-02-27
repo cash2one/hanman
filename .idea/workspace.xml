@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5f9d75-19ef-4c9b-ae59-bb3279b1839b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Admins.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Admins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Books.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Books.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/install/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/install/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/model/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/model/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/install/view/index/step3.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/install/view/index/step3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/service/BookService.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/service/BookService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/site.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,29 +76,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
+      <file leaf-file-name="Books.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Books.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+            <state relative-caret-position="568">
+              <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="60" column="58" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
+            <state relative-caret-position="360">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/model/Admin.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            <state relative-caret-position="352">
+              <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pc_index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="131" column="63" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -133,6 +159,9 @@
       <find>弹窗</find>
       <find>layer</find>
       <find>deny_module_list</find>
+      <find>'type'   =&gt; 'redis'</find>
+      <find>name=&quot;hot</find>
+      <find>summary</find>
     </findStrings>
     <replaceStrings>
       <replace>小涴熊CMS</replace>
@@ -156,24 +185,15 @@
         <option value="$PROJECT_DIR$/application/index/view/index/pc_bookshelf.html" />
         <option value="$PROJECT_DIR$/application/index/view/chapters/index.html" />
         <option value="$PROJECT_DIR$/application/index/view/chapters/pc_index.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/pc_index.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/pc_search.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/search.html" />
         <option value="$USER_HOME$/Desktop/Index.php" />
         <option value="$PROJECT_DIR$/application/admin/view/books/create.html" />
         <option value="$PROJECT_DIR$/application/admin/view/books/edit.html" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
-        <option value="$PROJECT_DIR$/application/install/view/index/step3.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Test.php" />
-        <option value="$PROJECT_DIR$/config/site.php" />
         <option value="$PROJECT_DIR$/application/index/view/books/pc_index.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/Books.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/config/cache.php" />
-        <option value="$PROJECT_DIR$/application/index/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
-        <option value="$PROJECT_DIR$/application/service/BookService.php" />
         <option value="$PROJECT_DIR$/route/route.php" />
         <option value="$PROJECT_DIR$/vendor/topthink/think-captcha/src/helper.php" />
         <option value="$PROJECT_DIR$/vendor/topthink/think-captcha/src/CaptchaController.php" />
@@ -187,7 +207,6 @@
         <option value="$PROJECT_DIR$/application/index/view/pub/pc_base.html" />
         <option value="$PROJECT_DIR$/application/install/sql/install.sql" />
         <option value="$PROJECT_DIR$/application/ucenter/validate/Account.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Admins.php" />
         <option value="$PROJECT_DIR$/application/ucenter/controller/Users.php" />
         <option value="$PROJECT_DIR$/application/ucenter/controller/Base.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/BaseAdmin.php" />
@@ -199,8 +218,18 @@
         <option value="$PROJECT_DIR$/application/ucenter/controller/Account.php" />
         <option value="$PROJECT_DIR$/application/model/Tags.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
-        <option value="$PROJECT_DIR$/application/install/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/model/Admin.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Admins.php" />
+        <option value="$PROJECT_DIR$/application/service/BookService.php" />
+        <option value="$PROJECT_DIR$/application/install/view/index/step3.html" />
+        <option value="$PROJECT_DIR$/application/install/controller/Index.php" />
+        <option value="$PROJECT_DIR$/config/site.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
+        <option value="$PROJECT_DIR$/application/index/view/index/pc_index.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/Books.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/index/view/index/index.html" />
       </list>
     </option>
   </component>
@@ -253,33 +282,40 @@
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="service" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -295,19 +331,19 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wwwroot\hanman\public\static\admin\css" />
-      <recent name="D:\wwwroot\hanman\public\static\admin\images" />
-      <recent name="D:\wwwroot\hanman\public\static\user" />
-      <recent name="D:\wwwroot\hanman\public\static\upload" />
-      <recent name="D:\wwwroot\hanman\application\admin\view" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wwwroot\hanman\application" />
       <recent name="D:\wwwroot\hanman\public\static\admin\js" />
       <recent name="D:\wwwroot\hanman\public\static\admin\css" />
       <recent name="D:\wwwroot\hanman\public\static\admin_js" />
       <recent name="D:\wwwroot\hanman\public\static\admin_css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wwwroot\hanman\public\static\admin\css" />
+      <recent name="D:\wwwroot\hanman\public\static\admin\images" />
+      <recent name="D:\wwwroot\hanman\public\static\user" />
+      <recent name="D:\wwwroot\hanman\public\static\upload" />
+      <recent name="D:\wwwroot\hanman\application\admin\view" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -445,12 +481,12 @@
       <workItem from="1551155432468" duration="7080000" />
       <workItem from="1551169586732" duration="148000" />
       <workItem from="1551172244049" duration="11000" />
-      <workItem from="1551254825712" duration="2537000" />
+      <workItem from="1551254825712" duration="9501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186497000" />
+    <option name="totallyTimeSpent" value="193461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -513,20 +549,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/ucenter/view/account/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="96" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Admins.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1062">
@@ -567,13 +589,6 @@
         <state relative-caret-position="-710" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/install/view/index/step3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -588,60 +603,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Books.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="108" selection-start-line="39" selection-start-column="108" selection-end-line="39" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="20" column="23" selection-start-line="17" selection-start-column="4" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="137" column="119" selection-start-line="137" selection-start-column="119" selection-end-line="137" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/topthink/think-captcha/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -681,20 +647,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/ucenter/controller/Index.html" />
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="175" column="33" lean-forward="true" selection-start-line="171" selection-start-column="28" selection-end-line="175" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/css/pc_reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -829,12 +781,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Admins.php">
+    <entry file="file://$PROJECT_DIR$/application/model/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <state relative-caret-position="342">
+          <caret line="24" column="5" selection-start-line="21" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Admins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="66" column="92" selection-start-line="66" selection-start-column="92" selection-end-line="66" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Base.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -843,17 +805,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
+    <entry file="file://$PROJECT_DIR$/application/install/view/index/step3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
+        <state relative-caret-position="444">
+          <caret line="92" column="73" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/model/Admin.php">
+    <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="294">
+          <caret line="199" column="55" selection-start-line="199" selection-start-column="43" selection-end-line="199" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="2" selection-start-line="15" selection-end-line="27" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/admins/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-656" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="74" column="61" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="60" column="58" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="131" column="63" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Books.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
         </state>
       </provider>
     </entry>

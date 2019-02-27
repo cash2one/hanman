@@ -53,7 +53,7 @@ class BookService extends Base
 
     public function getBooksById($ids){
         if (empty($ids) || strlen($ids)<=0){
-            $ids = 1;
+            return [];
         }
         $exp = new \think\db\Expression('field(id,'.$ids.')');
         $books = Book::where('id','in',$ids)->with('author,chapters')->order($exp)->select();

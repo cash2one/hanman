@@ -22,6 +22,7 @@ class Index extends BaseAdmin
         $redis_host = config('site.redis_host');
         $redis_port = config('site.redis_port');
         $redis_auth = config('site.redis_auth');
+        $redis_prefix= config('site.redis_prefix');
         $this->assign([
             'site_name' => $site_name,
             'url' => $url,
@@ -31,7 +32,8 @@ class Index extends BaseAdmin
             'api_key' => $api_key,
             'redis_host' => $redis_host,
             'redis_port' => $redis_port,
-            'redis_auth' => $redis_auth
+            'redis_auth' => $redis_auth,
+            'redis_prefix' => $redis_prefix
         ]);
         return view();
     }
