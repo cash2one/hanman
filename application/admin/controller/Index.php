@@ -49,6 +49,7 @@ class Index extends BaseAdmin
         $redis_host = input('redis_host');
         $redis_port = input('redis_port');
         $redis_auth = input('redis_auth');
+        $redis_prefix = input('redis_prefix');
         $code = <<<INFO
         <?php
         return [
@@ -60,7 +61,8 @@ class Index extends BaseAdmin
             'api_key' => '{$api_key}',
             'redis_host' => '{$redis_host}',
             'redis_port' => '{$redis_port}',
-            'redis_auth' => '{$redis_auth}'
+            'redis_auth' => '{$redis_auth}',
+            'redis_prefix' => '{$redis_prefix}' 
         ];
 INFO;
         file_put_contents(App::getRootPath() . 'config/site.php', $code);
