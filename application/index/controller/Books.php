@@ -25,15 +25,11 @@ class Books extends Base
         if ($book ==false) {
             $book = Book::with('chapters,author')->find($id);
             $tags = explode('|', $book->tags);
-            cache('book' . $id, $book);
-            cache('book' . $id . 'tags', $tags);
+            cache('book' . $id, $book,null,'redis');
+            cache('book' . $id . 'tags', $tags,null,'redis');
         }
 
-        $redis = new \Redis();
-        $redis->connect(config('site.redis_host'), config('site.redis_port'));
-        if (!empty(config('site.redis_auth'))){
-            $redis->auth(config('site.redis_auth'));
-        }
+        $redis = new_redis();
         $redis->zIncrBy('hot_books',1,json_encode([
             'id' => $book->id,
             'book_name' => $book->book_name,
@@ -47,7 +43,7 @@ class Books extends Base
         if ($start == false) {
             $db = Db::query('SELECT id FROM '.$this->prefix.'chapter WHERE book_id = ' . $request->param('id') . ' ORDER BY id LIMIT 1');
             $start = $db ? $db[0]['id'] : -1;
-            cache('book_start' . $id, $start);
+            cache('book_start' . $id, $start,null,'redis');
         }
 
         $this->assign([
@@ -56,7 +52,7 @@ class Books extends Base
             'recommand' => $recommand,
             'start' => $start,
         ]);
-        if (!isMobile()){
+        if ($this->request->isMobile()){
             $updates = $this->bookService->getBooks('update_time',[],10);
             $this->assign('updates',$updates);
         }
@@ -79,7 +75,7 @@ class Books extends Base
             'books' => $books,
             'tag' => $tag
         ]);
-        if (!isMobile()){
+        if (!$this->request->isMobile()){
             $tags = \app\model\Tags::all();
             $this->assign([
                 'tags' => $tags,

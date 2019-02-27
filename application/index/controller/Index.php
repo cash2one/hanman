@@ -18,13 +18,9 @@ class Index extends Base
         $banners = cache('banners_homepage');
         if (!$banners){
             $banners = Banner::limit(5)->order('id','desc')->select();
-            cache('banners_homepage',$banners);
+            cache('banners_homepage',$banners,null,'redis');
         }
-        $redis = new \Redis();
-        $redis->connect(config('site.redis_host'), config('site.redis_port'));
-        if (!empty(config('site.redis_auth'))){
-            $redis->auth(config('site.redis_auth'));
-        }
+        $redis = new_redis();
         $hots = $redis->zRevRange('hot_books',0,5,true);
         $hot_books = array();
         foreach ($hots as $k => $v){
@@ -33,16 +29,15 @@ class Index extends Base
         $newest = cache('newest_homepage_pc');
         if (!$newest){
             $newest = $this->bookService->getBooks('create_time','1=1',10);
-            cache('newest_homepage_pc',$newest);
+            cache('newest_homepage_pc',$newest,null,'redis');
         }
 
         $ends = cache('ends_homepage_pc');
         if (!$ends){
             $ends = $this->bookService->getBooks('update_time',[['end','=','1']],10);
-            cache('ends',$ends);
+            cache('ends',$ends,null,'redis');
         }
         $rands = $this->bookService->getRandBooks();
-       // halt($hot_books);
         $this->assign([
             'banners' => $banners,
             'banners_count' => count($banners),
@@ -51,7 +46,7 @@ class Index extends Base
             'ends' => $ends,
             'rands' => $rands
         ]);
-        if (!isMobile()){
+        if (!$this->request->isMobile()){
             $tags = \app\model\Tags::all();
             $this->assign('tags',$tags);
         }
@@ -64,7 +59,7 @@ class Index extends Base
         $books = cache('searchresult'.$keyword);
         if (!$books){
             $books = $this->bookService->search($keyword);
-            cache('searchresult'.$keyword,$books);
+            cache('searchresult'.$keyword,$books,null,'redis');
         }
         foreach ($books as &$book){
             $author = Author::get($book['author_id']);

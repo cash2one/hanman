@@ -158,7 +158,7 @@ class Index extends Controller
      */
     private function step5()
     {
-        $param = $this->request->only(['username','password','salt']);
+        $param = $this->request->only(['username','password','salt','redis_prefix']);
 
         $config = include App::getRootPath() . 'config/database.php';
         if (empty($config['hostname']) || empty($config['database']) || empty($config['username'])) {
@@ -196,7 +196,7 @@ class Index extends Controller
                 }
             }
         }
-        $this->setSiteConfig(trim($param['salt']),trim($param['redis_prefix'])); //写入网站配置文件
+        $this->setSiteConfig(trim($param['salt'])); //写入网站配置文件
         $this->setCacheConfig(trim($param['redis_prefix'])); //写入cache配置文件
         // 注册管理员账号
         $data = [
@@ -220,14 +220,12 @@ class Index extends Controller
         $this->success('系统安装成功,欢迎您使用小涴熊CMS建站.');
     }
 
-    private function setSiteConfig($salt,$redis_prefix){
+    private function setSiteConfig($salt){
         $site_name = config('site.site_name');
         $url = config('site.url');
         $img_site = config('site.img_site');
         $xzh = config('site.xzh');
         $api_key = config('site.api_key');
-        $redis_host = '127.0.0.1';
-        $redis_port = '6379';
         $code = <<<INFO
         <?php
         return [
@@ -236,11 +234,7 @@ class Index extends Controller
             'site_name' => '{$site_name}',
             'xiongzhang' => '{$xzh}',
             'salt' => '{$salt}',
-            'api_key' => '{$api_key}',
-             'redis_host' => '{$redis_host}',
-            'redis_port' => '{$redis_port}',
-            'redis_prefix' => '{$redis_prefix}',
-            'redis_auth' => ''        
+            'api_key' => '{$api_key}',               
             ];
 INFO;
         file_put_contents(App::getRootPath() . 'config/site.php', $code);
@@ -248,6 +242,7 @@ INFO;
 
     private function setCacheConfig($redis_prefix){
         $code = <<<INFO
+        <?php
         return [
             // 驱动方式
             'type'   => 'redis',

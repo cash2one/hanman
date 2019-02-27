@@ -9,17 +9,15 @@
 namespace app\index\controller;
 
 
-use think\Controller;
 use app\model\Tags as Tag;
-use think\facade\Cache;
 
 class Tags extends Base
 {
     public function index(){
-        $tags = Cache::get('tags');
+        $tags = cache('tags');
         if (!$tags){
             $tags = Tag::all();
-            Cache::set('tags',$tags,600);
+            cache('tags',$tags,null,'redis');
         }
         $this->assign([
             'tags' => $tags,

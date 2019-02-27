@@ -22,7 +22,7 @@ class Base extends Controller
     {
         parent::__construct($app);
         $this->prefix = config('database.prefix');
-        if (isMobile()){
+        if ($this->request->isMobile()){
             $this->tpl = $this->request->action();
         }else{
             $this->tpl = 'pc_'.$this->request->action();
@@ -30,7 +30,7 @@ class Base extends Controller
         $links = cache('friendship_link');
         if ($links == false){
             $links = FriendshipLink::all();
-            cache('friendship_link',$links);
+            cache('friendship_link',$links,null,'redis');
         }
         View::share([
             'url' => config('site.url'),

@@ -20,7 +20,7 @@ return [
     'port' => 6379,
     'password'   => '',
     // 缓存保存目录
-    'path'   => '../runtime/cache/',
+    'path'   => '',
     // 缓存前缀
     'prefix' => '',
     // 缓存有效期 0表示永久缓存
