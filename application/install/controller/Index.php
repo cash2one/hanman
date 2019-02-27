@@ -239,7 +239,7 @@ class Index extends Controller
             'api_key' => '{$api_key}',
              'redis_host' => '{$redis_host}',
             'redis_port' => '{$redis_port}',
-            'redis_prefix' => '{$redis_prefix}'
+            'redis_prefix' => '{$redis_prefix}',
             'redis_auth' => ''        
             ];
 INFO;
