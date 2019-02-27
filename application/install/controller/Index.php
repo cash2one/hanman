@@ -196,6 +196,7 @@ class Index extends Controller
                 }
             }
         }
+        $this->setSalt($param['salt']); //先写入密码盐，再创建管理员账号
         // 注册管理员账号
         $data = [
             'username' => $param['username'],
@@ -208,7 +209,6 @@ class Index extends Controller
         if (!$res) {
             return $this->error('管理员账号设置失败:'.$res['msg']);
         }
-        $this->setSalt($param['salt']);
         $install = App::getRootPath() . 'application/install/install.lock';
         if (!is_dir(dirname($install))) {
             @mkdir(dirname($install),0777,true);
