@@ -28,7 +28,7 @@ class Login extends Controller
                 $this->error('验证码错误','/admin/login/index','',1);
             }
             $username = $request->param('admin');
-            $password = md5($request->param('password').config('site.salt'));
+            $password = md5(strtolower(trim($request->param('password'))).config('site.salt'));
             $map = array();
             $map[] = ['username','=',$username];
             $map[] = ['password', '=', $password];

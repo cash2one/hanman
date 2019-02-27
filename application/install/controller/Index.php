@@ -199,7 +199,7 @@ class Index extends Controller
         // 注册管理员账号
         $data = [
             'username' => $param['username'],
-            'password' => $param['password'].$param['salt'],
+            'password' => $param['password'],
             'last_login_time' => time(),
             'last_login_ip' => $this->request->ip(),
         ];
