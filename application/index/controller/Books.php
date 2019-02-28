@@ -28,7 +28,6 @@ class Books extends Base
             cache('book' . $id, $book,null,'redis');
             cache('book' . $id . 'tags', $tags,null,'redis');
         }
-
         $redis = new_redis();
         $redis->zIncrBy('hot_books',1,json_encode([
             'id' => $book->id,
@@ -38,7 +37,16 @@ class Books extends Base
             'chapter_count' => count($book->chapters),
             'summary' => $book->summary
         ]));
-        $recommand = $this->bookService->getRandBooks();
+        $recommand = cache('rand_books');
+        if (!$recommand){
+            $recommand = $this->bookService->getRandBooks();
+            cache('rand_books',$recommand,null,'redis');
+        }
+        $updates = cache('update_books');
+        if (!$updates){
+            $updates = $this->bookService->getBooks('update_time',[],10);
+            cache('update_books',$updates,null,'redis');
+        }
         $start = cache('book_start' . $id);
         if ($start == false) {
             $db = Db::query('SELECT id FROM '.$this->prefix.'chapter WHERE book_id = ' . $request->param('id') . ' ORDER BY id LIMIT 1');
@@ -51,11 +59,8 @@ class Books extends Base
             'tags' => $tags,
             'recommand' => $recommand,
             'start' => $start,
+            'updates' => $updates
         ]);
-        if ($this->request->isMobile()){
-            $updates = $this->bookService->getBooks('update_time',[],10);
-            $this->assign('updates',$updates);
-        }
         return view($this->tpl);
 
     }
