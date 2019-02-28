@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5f9d75-19ef-4c9b-ae59-bb3279b1839b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Books.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Books.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/install/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/install/controller/Index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,38 +68,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pc_index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/index/view/books/pc_index.html">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="103" column="35" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="35" />
+            <state relative-caret-position="-137">
+              <caret line="311" column="38" lean-forward="true" selection-start-line="311" selection-start-column="38" selection-end-line="311" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Books.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/Books.php">
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+            <state relative-caret-position="-1116">
+              <caret line="28" column="107" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="28" selection-end-column="107" />
+              <folding>
+                <element signature="n#delete_dir_file#0;n#!!top" />
+                <element signature="n#img_process#0;n#!!top" />
+                <element signature="n#xiongzhang_push#0;n#!!top" />
+                <element signature="n#subtext#0;n#!!top" />
+                <element signature="n#xwxcms_substring#0;n#!!top" />
+                <element signature="e#1831#2741#0#PHP" />
+                <element signature="n#new_redis#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pc_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_index.html">
+      <file leaf-file-name="step3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/install/view/index/step3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="91" column="32" lean-forward="true" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="1656">
+              <caret line="92" column="73" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -115,7 +116,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>global_search</find>
-      <find>img src=</find>
+      <find />
       <find>src=</find>
       <find>hot</find>
       <find>最多点击</find>
@@ -137,11 +138,11 @@
       <find>弹窗</find>
       <find>layer</find>
       <find>deny_module_list</find>
-      <find>'type'   =&gt; 'redis'</find>
+      <find />
       <find>name=&quot;hot</find>
       <find>summary</find>
       <find>redis_prefix</find>
-      <find>$redis = new_redis();</find>
+      <find />
       <find>isMob</find>
       <find>全站</find>
     </findStrings>
@@ -192,7 +193,6 @@
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/application/install/view/index/step3.html" />
-        <option value="$PROJECT_DIR$/application/install/controller/Index.php" />
         <option value="$PROJECT_DIR$/config/cache.php" />
         <option value="$PROJECT_DIR$/application/common.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Base.php" />
@@ -212,6 +212,7 @@
         <option value="$PROJECT_DIR$/application/index/view/tags/index.html" />
         <option value="$PROJECT_DIR$/application/index/view/books/pc_index.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Books.php" />
+        <option value="$PROJECT_DIR$/application/install/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -247,6 +248,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,43 +265,27 @@
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="books" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="chapters" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
@@ -307,23 +293,14 @@
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pub" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tags" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,18 +465,19 @@
       <workItem from="1551272292822" duration="1301000" />
       <workItem from="1551275282312" duration="28000" />
       <workItem from="1551277243394" duration="4402000" />
-      <workItem from="1551374610462" duration="450000" />
+      <workItem from="1551374610462" duration="791000" />
+      <workItem from="1551375732484" duration="339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199642000" />
+    <option name="totallyTimeSpent" value="200322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22050938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22319035" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -523,19 +501,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21782842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281471" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -556,21 +534,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/ucenter/controller/Index.html" />
-    <entry file="file://$PROJECT_DIR$/public/static/css/pc_reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/js/manhua.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="221" selection-start-line="221" selection-end-line="221" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/pub/pc_base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -717,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/install/view/index/step3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="92" column="73" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -735,13 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="244" column="13" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -771,22 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="28" column="107" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="28" selection-end-column="107" />
-          <folding>
-            <element signature="n#delete_dir_file#0;n#!!top" />
-            <element signature="n#img_process#0;n#!!top" />
-            <element signature="n#xiongzhang_push#0;n#!!top" />
-            <element signature="n#subtext#0;n#!!top" />
-            <element signature="n#xwxcms_substring#0;n#!!top" />
-            <element signature="n#xwxcms_parse_sql#0;n#!!top" />
-            <element signature="n#new_redis#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -876,29 +809,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="91" column="32" lean-forward="true" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+        <state relative-caret-position="1638">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="450">
+          <caret line="27" column="9" selection-start-line="23" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Books.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="792">
           <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/books/pc_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="65">
           <caret line="103" column="35" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/provider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/command.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/tags.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1116">
+          <caret line="28" column="107" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="28" selection-end-column="107" />
+          <folding>
+            <element signature="n#delete_dir_file#0;n#!!top" />
+            <element signature="n#img_process#0;n#!!top" />
+            <element signature="n#xiongzhang_push#0;n#!!top" />
+            <element signature="n#subtext#0;n#!!top" />
+            <element signature="n#xwxcms_substring#0;n#!!top" />
+            <element signature="e#1831#2741#0#PHP" />
+            <element signature="n#new_redis#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/install/view/index/step3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="92" column="73" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="311" column="38" lean-forward="true" selection-start-line="311" selection-start-column="38" selection-end-line="311" selection-end-column="38" />
         </state>
       </provider>
     </entry>

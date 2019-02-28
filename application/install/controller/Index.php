@@ -171,7 +171,8 @@ class Index extends Controller
         $rule = [
             'username|管理员账号' => 'require|alphaNum',
             'password|管理员密码' => 'require|length:6,20',
-            'salt|密码盐' => 'require|alphaNum'
+            'salt|密码盐' => 'require|alphaNum',
+            'redis_prefix|缓存前缀' => 'require|alphaNum'
         ];
 
         $validate = $this->validate($param, $rule);
@@ -299,7 +300,7 @@ INFO;
             ['file', '../config/database.php', '读写', '读写', 'ok'],
             ['dir', '../runtime', '读写', '读写', 'ok'],
             ['dir', '../public/static/upload', '读写', '读写', 'ok'],
-
+            ['file', '../config/cache.php', '读写', '读写', 'ok'],
         ];
         foreach ($items as &$v) {
             if ($v[0] == 'dir') {// 文件夹
@@ -341,7 +342,7 @@ INFO;
             ['gzopen', '支持', 'yes', '函数'],
         ];
 
-        if(version_compare(PHP_VERSION,'7.1.0','ge') && version_compare(PHP_VERSION,'7.2.0','lt')){
+        if(version_compare(PHP_VERSION,'7.0.0','ge') && version_compare(PHP_VERSION,'7.3.0','lt')){
             $items[] = ['always_populate_raw_post_data','支持','yes','配置'];
         }
 
