@@ -9,7 +9,6 @@
 namespace app\install\controller;
 use think\Controller;
 use think\Db;
-use think\facade\Config;
 use think\facade\App;
 
 class Index extends Controller
@@ -163,9 +162,6 @@ class Index extends Controller
         $config = include App::getRootPath() . 'config/database.php';
         if (empty($config['hostname']) || empty($config['database']) || empty($config['username'])) {
             return $this->error('请先点击测试数据库连接！');
-        }
-        if (empty($param['username']) || empty($param['password']) || empty($param['salt'])) {
-            return $this->error('请填写管理账号、密码、密码盐！');
         }
 
         $rule = [
@@ -342,7 +338,7 @@ INFO;
             ['gzopen', '支持', 'yes', '函数'],
         ];
 
-        if(version_compare(PHP_VERSION,'7.0.0','ge') && version_compare(PHP_VERSION,'7.3.0','lt')){
+        if(version_compare(PHP_VERSION,'7.1.0','ge') && version_compare(PHP_VERSION,'7.2.0','lt')){
             $items[] = ['always_populate_raw_post_data','支持','yes','配置'];
         }
 
