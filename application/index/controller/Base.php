@@ -18,10 +18,12 @@ class Base extends Controller
 {
     protected $tpl;
     protected $prefix;
+    protected $redis_prefix;
     public function __construct(App $app = null)
     {
         parent::__construct($app);
         $this->prefix = config('database.prefix');
+        $this->redis_prefix = config('cache.prefix');
         if ($this->request->isMobile()){
             $this->tpl = $this->request->action();
         }else{

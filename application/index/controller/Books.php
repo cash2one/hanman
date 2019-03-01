@@ -29,7 +29,7 @@ class Books extends Base
             cache('book' . $id . 'tags', $tags,null,'redis');
         }
         $redis = new_redis();
-        $redis->zIncrBy('hot_books',1,json_encode([
+        $redis->zIncrBy($this->redis_prefix.'hot_books',1,json_encode([
             'id' => $book->id,
             'book_name' => $book->book_name,
             'cover_url' => $book->cover_url,

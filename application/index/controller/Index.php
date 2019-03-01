@@ -20,12 +20,14 @@ class Index extends Base
             $banners = Banner::limit(5)->order('id','desc')->select();
             cache('banners_homepage',$banners,null,'redis');
         }
+        
         $redis = new_redis();
-        $hots = $redis->zRevRange('hot_books',0,5,true);
+        $hots = $redis->zRevRange($this->redis_prefix.'hot_books',0,5,true);
         $hot_books = array();
         foreach ($hots as $k => $v){
             $hot_books[] = json_decode($k,true);
         }
+
         $newest = cache('newest_homepage_pc');
         if (!$newest){
             $newest = $this->bookService->getBooks('create_time','1=1',10);
