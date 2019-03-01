@@ -24,11 +24,6 @@ function delete_dir_file($dir_name)
     return $result;
 }
 
-function clearCache(){
-    $rootPath = App::getRootPath();
-    return delete_dir_file($rootPath . '/runtime/cache/') && delete_dir_file($rootPath . '/runtime/temp/');
-}
-
 function img_process($file,$width,$height,$path){
     $image = think\Image::open($file);
     $image->thumb($width, $height,think\Image::THUMB_FIXED)->save($path);

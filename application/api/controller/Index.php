@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: hiliq
- * Date: 2019/2/2
- * Time: 15:29
+ * Date: 2019/3/1
+ * Time: 21:19
  */
 namespace app\api\controller;
 use app\model\Author;
@@ -26,10 +26,6 @@ class Index extends Controller
     {
         if ($request->isPost()) {
             $data = $request->param();
-            $api_key = trim($data['api_key']);
-            if ($api_key != trim(config('site.api_key'))){
-                return 'api_key错误';
-            }
             $book = Book::where('book_name', '=', trim($data['book_name']))->find();
             if (!$book) {
                 $author = Author::where('author_name', '=', trim($data['author']))->find();
@@ -43,7 +39,6 @@ class Index extends Controller
                 $book->book_name = trim($data['book_name']);
                 $book->nick_name = trim($data['nick_name']);
                 $book->tags = trim($data['tags']);
-                $book->summary = trim($data['summary']);
                 $book->src = trim($data['src']);
                 $book->end = trim($data['end']);
                 $book->cover_url = trim($data['cover_url']);
@@ -64,7 +59,8 @@ class Index extends Controller
                 $chapter->order = $lastChapterOrder + 1;
                 $chapter->save();
             }
-            preg_match_all('/src=\"(.+?)\"/is', $data['images'], $img_urls);
+            $preg = '/\bsrc\b\s*=\s*[\'\"]?([^\'\"]*)[\'\"]?/i';
+            preg_match_all($preg, $data['images'], $img_urls);
             foreach ($img_urls[1] as $img_url){
                 $photo = new Photo();
                 $photo->chapter_id  = $chapter->id;
