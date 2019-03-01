@@ -338,7 +338,7 @@ INFO;
             ['gzopen', '支持', 'yes', '函数'],
         ];
 
-        if(version_compare(PHP_VERSION,'7.1.0','ge') && version_compare(PHP_VERSION,'7.2.0','lt')){
+        if(version_compare(PHP_VERSION,'7.0.0','lt')){
             $items[] = ['always_populate_raw_post_data','支持','yes','配置'];
         }
 
