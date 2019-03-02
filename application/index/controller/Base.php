@@ -23,7 +23,7 @@ class Base extends Controller
     {
         parent::__construct($app);
         $this->prefix = config('database.prefix');
-        $this->redis_prefix = config('cache.prefix');
+        $this->redis_prefix = config('cache.prefix')."_";
         if ($this->request->isMobile()){
             $this->tpl = $this->request->action();
         }else{
