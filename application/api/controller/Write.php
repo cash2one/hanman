@@ -12,8 +12,7 @@ use app\model\Photo;
 use think\Controller;
 use think\Request;
 use app\model\Chapter;
-use think\facade\App;
-class Index extends Controller
+class Write extends Controller
 {
     protected $chapterService;
     protected $photoService;
@@ -26,6 +25,9 @@ class Index extends Controller
     {
         if ($request->isPost()) {
             $data = $request->param();
+            if (empty($data['api_key']) || is_null($data['api_key'])){
+                return 'api密钥错误！';
+            }
             $book = Book::where('book_name', '=', trim($data['book_name']))->find();
             if (!$book) {
                 $author = Author::where('author_name', '=', trim($data['author']))->find();
@@ -37,7 +39,9 @@ class Index extends Controller
                 $book = new Book();
                 $book->author_id = $author->id;
                 $book->book_name = trim($data['book_name']);
-                $book->nick_name = trim($data['nick_name']);
+                if (!empty($data['nick_name']) || !is_null($data['nick_name'])){
+                    $book->nick_name = trim($data['nick_name']);
+                }
                 $book->tags = trim($data['tags']);
                 $book->src = trim($data['src']);
                 $book->end = trim($data['end']);
