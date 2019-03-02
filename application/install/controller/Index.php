@@ -168,7 +168,7 @@ class Index extends Controller
             'username|管理员账号' => 'require|alphaNum',
             'password|管理员密码' => 'require|length:6,20',
             'salt|密码盐' => 'require|alphaNum',
-            'redis_prefix|缓存前缀' => 'require|alphaNum'
+            'redis_prefix|缓存前缀' => 'require|^[0-9a-zA-Z_]{1,}$'
         ];
 
         $validate = $this->validate($param, $rule);
