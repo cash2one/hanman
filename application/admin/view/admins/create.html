@@ -5,7 +5,7 @@
 
 {block name="body"}
 <article class="clearfix pd-20">
-    <form class="form form-horizontal" action="{:url('save')}" method="post">
+    <form id="form" class="form form-horizontal" action="{:url('save')}" method="post">
         <div class="row clearfix">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>账号：</label>
             <div class="formControls col-xs-8 col-sm-9">
@@ -39,20 +39,34 @@
 {include file="pub/validate_scripts" /}
 <script type="text/javascript">
     $(function(){
-        $("form").validate({
+        $("#form").validate({
             rules:{
-                username:{
-                    required:true,
-                    minlength:1,
-                    maxlength:50
+                username: {
+                    required: true,
+                    rangelength: [6, 20]
                 },
-                password:{
-                    required:true
+                password: {
+                    required: true,
+                    rangelength: [6, 16]
                 },
-                password2:{
-                    required:true,
-                    equalTo: "#password"
+                password2: {
+                    required: true,
+                    equalTo:"#password"
+                }
+            },
+            messages: {
+                username: {
+                    required: "用户名不能为空",
+                    rangelength: "用户名长度6-20个字符"
                 },
+                password: {
+                    required: "密码不能为空",
+                    rangelength: "密码长度6-16个字符"
+                },
+                password2: {
+                    required: "确认密码不能为空",
+                    equalTo:"两次密码输入不一致"
+                }
             },
             onkeyup:false,
             focusCleanup:false,
