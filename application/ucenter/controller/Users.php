@@ -9,7 +9,7 @@
 namespace app\ucenter\controller;
 
 
-class Users
+class Users extends BaseUcenter
 {
 
 }

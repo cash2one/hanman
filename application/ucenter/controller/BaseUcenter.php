@@ -11,7 +11,7 @@ namespace app\ucenter\controller;
 
 use think\Controller;
 
-class Base extends Controller
+class BaseUcenter extends Controller
 {
     protected function checkAuth(){
         if (!Session::has('xwx_user')) {

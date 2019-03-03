@@ -16,6 +16,7 @@ class AdminService
         $data = Admin::order('id','desc');
         $admins =  $data->paginate(5,false,
             [
+                'query' => request()->param(),
                 'type'     => 'util\AdminPage',
                 'var_page' => 'page',
             ]);

@@ -19,6 +19,7 @@ class BookService extends Base
         $books = Book::where($where)->with('chapters')->order($order,'desc')
             ->paginate($num,false,
                 [
+                    'query' => request()->param(),
                     'type'     => 'util\Page',
                     'var_page' => 'page',
                 ]);
@@ -33,6 +34,7 @@ class BookService extends Base
         $books = $data->with('author,chapters')->order('id','desc')
             ->paginate(5,false,
                 [
+                    'query' => request()->param(),
                     'type'     => 'util\AdminPage',
                     'var_page' => 'page',
                 ]);

@@ -30,6 +30,7 @@ class AuthorService
 
     public function getAuthors($where = '1=1'){
         $authors = Author::where($where)->with('books')->paginate(5,false,[
+            'query' => request()->param(),
             'type'     => 'util\AdminPage',
             'var_page' => 'page',
         ]);

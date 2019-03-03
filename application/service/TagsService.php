@@ -21,6 +21,7 @@ class TagsService
         $tags = $data->order('id','desc')
             ->paginate(5,false,
                 [
+                    'query' => request()->param(),
                     'type'     => 'util\AdminPage',
                     'var_page' => 'page',
                 ]);
