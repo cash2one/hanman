@@ -44,7 +44,7 @@ class Login extends Controller
     }
 
     public function logout(){
-        session('admin',null);
+        session('xwx_admin',null);
         $this->redirect('/admin/login/index');
     }
 }
